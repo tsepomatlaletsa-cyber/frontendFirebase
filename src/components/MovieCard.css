@@ -1,0 +1,78 @@
+.movie-card {
+  background: #1a1a1d;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.movie-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(255, 204, 0, 0.4);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+
+.movie-info h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.movie-rating {
+  color: #ffcc00;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.movie-description {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hover overlay */
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.hover-description {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #ddd;
+}
+
+/* Remove underline from Link */
+.no-underline {
+  text-decoration: none;
+  color: inherit;
+}
