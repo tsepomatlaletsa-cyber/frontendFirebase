@@ -14,7 +14,7 @@ function Header({ toggleSidebar, user, setUser, onSearch }) {
     const value = e.target.value;
     setSearch(value);
     if (onSearch) {
-      onSearch(value); // 🔍 notify parent for filtering
+      onSearch(value); 
     }
   };
 
@@ -31,7 +31,7 @@ function Header({ toggleSidebar, user, setUser, onSearch }) {
         <input
           type="text"
           className="search-input"
-          placeholder="Search movies..."
+          placeholder="🔍 Search movies..."
           value={search}
           onChange={handleSearchChange}
         />
