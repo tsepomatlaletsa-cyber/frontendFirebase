@@ -18,7 +18,7 @@ export default function Movies() {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/movies");
+        const response = await axios.get("https://backendfirebase-a1f4.onrender.com/api/movies");
         const data = response.data;
         setMovies(data);
         setFilteredMovies(data);
